@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="olympicApp">
+  <head>
+    <meta charset="utf-8">
+    <title>TEAM USA</title>
+    <script src="../vendor/angular.min.js" charset="utf-8"></script>
+    <script src="../vendor/angular-route/angular-route.min.js" charset="utf-8"></script>
+    <script src="../scripts/client.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../styles/stylesheet.css" >
+    <base href="/" />
+  </head>
+  <header>
+    <h1>TEAM USA</h1>
+  </header>
+    <main>
+  <!-- <button ng-click="getTeams()">Generate</button> -->
+
+      <div class="container">
+      <a href="/archery"><button class="btn btn-lg">Archery</button>
+      <a href="/judo"><button class="btn btn-lg">Judo</button>
+      <a href="/tableTennis"><button class="btn btn-lg">Table Tennis</button>
+      <a href="/taekwondo"><button class="btn btn-lg">Taekwondo</button>
+      <a href="/weightlifting"><button class="btn btn-lg">Weightlifting</button>
+      </div>
+  <div ng-view>
+  </div>
+  </main>
+
+  </body>
+</html>
