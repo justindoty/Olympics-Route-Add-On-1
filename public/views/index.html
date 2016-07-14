@@ -5,17 +5,28 @@
     <title>TEAM USA</title>
     <script src="../vendor/angular.min.js" charset="utf-8"></script>
     <script src="../vendor/angular-route/angular-route.min.js" charset="utf-8"></script>
-    <script src="../scripts/client.js" charset="utf-8"></script>
     <link rel="stylesheet" href="../styles/stylesheet.css" >
+    <script src="../scripts/routeApp.module.js"></script>
+    <script src="../scripts/routeApp.config.js"></script>
+    <script src="../scripts/client.js" charset="utf-8"></script>
+    <script src="../scripts/archeryController.js"></script>
+    <script src="../scripts/judoController.js"></script>
+    <script src="../scripts/tableTennisController.js"></script>
+    <script src="../scripts/taekwondoController.js"></script>
+    <script src="../scripts/weightliftingController.js"></script>
+    <script src="../scripts/DataService.js"></script>
+
+
     <base href="/" />
   </head>
-  <header>
-    <h1>TEAM USA</h1>
+  <header ng-controller="RefreshController">
+    <h1 ng-click="refresh()">TEAM USA</h1>
   </header>
     <main>
   <!-- <button ng-click="getTeams()">Generate</button> -->
 
       <div class="container">
+
       <a href="/archery"><button class="btn btn-lg">Archery</button>
       <a href="/judo"><button class="btn btn-lg">Judo</button>
       <a href="/tableTennis"><button class="btn btn-lg">Table Tennis</button>
